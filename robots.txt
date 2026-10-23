@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-vohoangviet.vercel.app/sitemap.xml
