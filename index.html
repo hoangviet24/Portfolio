@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#080a0c" />
+    <meta
+      name="description"
+      content="Portfolio của Võ Hoàng Việt — Backend Developer yêu thích xây dựng phần mềm hữu ích và có thể mở rộng."
+    />
+    <title>Portfolio - Võ Hoàng Việt</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2210%22 fill=%22%23080a0c%22/%3E%3Cpath d=%22M8 12h12l12 30 12-30h12L36 54H28z%22 fill=%22%23c8ff36%22/%3E%3Cpath d=%22M7 7h50v50H7z%22 fill=%22none%22 stroke=%22%2352e8d1%22 stroke-width=%222%22/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap navin">
+        <a class="brand" href="#top" aria-label="Võ Hoàng Việt, về đầu trang"
+          ><span class="brandmark">V</span
+          ><span
+            >VÕ HOÀNG VIỆT<span style="color: var(--lime)">_</span></span
+          ></a
+        >
+        <nav class="navlinks" aria-label="Điều hướng">
+          <a href="#about">Giới thiệu</a><a href="#skills">Kỹ năng</a
+          ><a href="#education">Học vấn</a>
+        </nav>
+        <a class="navcta" href="#contact"
+          >Kết nối <span style="color: var(--lime)">↗</span></a
+        >
+      </div>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <canvas id="scene" aria-hidden="true"></canvas>
+        <div class="fallback-orb" id="fallbackOrb" aria-hidden="true"></div>
+        <div class="wrap hero-content">
+          <div class="eyebrow">
+            Hồ sơ cá nhân &nbsp;·&nbsp; Hồ Chí Minh, Việt Nam
+          </div>
+          <h1>Võ Hoàng<span>Việt.</span></h1>
+          <br />
+          <p class="roleline">Backend Developer <b>·</b> Software Builder</p>
+          <p class="intro">
+            Biến những dòng code thành công cụ hữu ích — được xây chắc từ bên
+            trong và sẵn sàng mở rộng cho những điều lớn hơn.
+          </p>
+          <div class="actions">
+            <a class="button" href="#about">Khám phá hồ sơ <span>↓</span></a
+            ><a class="button ghost" href="#contact">Kết nối <span>↗</span></a>
+          </div>
+        </div>
+        <div class="scrollhint">CUỘN ĐỂ KHÁM PHÁ</div>
+        <div class="hero-note mono">
+          THINK IN SYSTEMS<br /><strong>BUILD FOR REAL LIFE</strong>
+        </div>
+        <div class="hero-index mono">
+          <span>01 / 04</span><span class="line"></span><span>2004 — NOW</span>
+        </div>
+      </section>
+      <div class="ticker">
+        <div class="ticker-track">
+          BUILD WITH PURPOSE <i>✳</i> BACKEND ENGINEERING <i>✳</i> CODE / CRAFT
+          / CREATE <i>✳</i> SYSTEMS THAT SCALE <i>✳</i> BUILD WITH PURPOSE
+          <i>✳</i> BACKEND ENGINEERING <i>✳</i> CODE / CRAFT / CREATE
+          <i>✳</i> SYSTEMS THAT SCALE <i>✳</i>
+        </div>
+      </div>
+      <section class="section" id="about">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <span class="mono section-no">01 — GIỚI THIỆU</span>
+              <h2>Động lực<br />phía sau code.</h2>
+            </div>
+            <p>
+              Mỗi vấn đề trong đời sống đều có thể là điểm bắt đầu cho một giải
+              pháp tốt hơn.
+            </p>
+          </div>
+          <div class="about-grid reveal">
+            <p class="about-copy">
+              Mình là <strong>Việt</strong> — một người đam mê máy tính từ nhỏ.
+              Mình luôn nhìn mọi thứ qua lăng kính của
+              <em>khả năng mở rộng và thay đổi</em>, với mong muốn đưa công nghệ
+              hữu ích vào đời sống. Mình thích lập trình phần mềm và những công
+              cụ nhỏ giúp công việc thường ngày trở nên dễ dàng hơn.
+            </p>
+            <div class="meta-grid">
+              <div class="meta">
+                <label>Họ và tên</label><strong>Võ Hoàng Việt</strong>
+              </div>
+              <div class="meta">
+                <label>Năm sinh</label><strong>2004</strong>
+              </div>
+              <div class="meta">
+                <label>Định hướng</label><strong>Backend Dev ASP.NET</strong>
+              </div>
+              <div class="meta">
+                <label>Trạng thái</label
+                ><strong
+                  ><span style="color: var(--lime)">●</span> Đang phát
+                  triển</strong
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section skills-section" id="skills">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <span class="mono section-no">02 — NĂNG LỰC</span>
+              <h2>Công cụ<br />trong tay.</h2>
+            </div>
+            <p>
+              Nền tảng vững chắc, tư duy hệ thống, luôn sẵn sàng học thêm điều
+              mới.
+            </p>
+          </div>
+          <div class="skill-grid reveal">
+            <button
+              type="button"
+              class="skill-card skill-toggle"
+              aria-expanded="false"
+              aria-controls="skill-detail-1"
+            >
+              <span class="skill-num">01 / BACKEND</span>
+              <div class="skill-icon">
+                <svg viewBox="0 0 40 40">
+                  <path
+                    d="M8 8h24v24H8zM14 15l5 5-5 5m9 0h5M4 13V4h9M27 4h9v9M36 27v9h-9M13 36H4v-9"
+                  />
+                </svg>
+              </div>
+              <h3>Backend Development</h3>
+              <p>
+                Thiết kế và xây dựng logic phía máy chủ cho ứng dụng ổn định, dễ
+                mở rộng.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">ASP.NET</span
+                ><span class="tag">Spring Boot</span>
+              </div>
+              <span class="expand-hint">NHẤN ĐỂ XEM CHI TIẾT <b>＋</b></span>
+              <div class="skill-details" id="skill-detail-1" hidden>
+                <strong>ASP.NET</strong>
+                <p>
+                  ASP.NET là nền tảng xây dựng ứng dụng web và API bằng C#. Nó
+                  tích hợp với .NET và hỗ trợ các thành phần phổ biến như định
+                  tuyến, dependency injection và xác thực.
+                </p>
+                <strong>Spring Boot</strong>
+                <p>
+                  Giúp khởi tạo ứng dụng Java và REST API nhanh với cấu hình mặc
+                  định hợp lý, thư viện starter và máy chủ nhúng để chạy dịch
+                  vụ.
+                </p>
+              </div></button
+            ><button
+              type="button"
+              class="skill-card skill-toggle"
+              aria-expanded="false"
+              aria-controls="skill-detail-2"
+            >
+              <span class="skill-num">02 / DATA</span>
+              <div class="skill-icon">
+                <svg viewBox="0 0 40 40">
+                  <ellipse cx="20" cy="9" rx="13" ry="5" />
+                  <path
+                    d="M7 9v22c0 3 6 5 13 5s13-2 13-5V9M7 20c0 3 6 5 13 5s13-2 13-5M7 30c0 3 6 5 13 5s13-2 13-5"
+                  />
+                </svg>
+              </div>
+              <h3>Database & SQL</h3>
+              <p>
+                Làm việc với dữ liệu có cấu trúc, truy vấn và tổ chức schema
+                thực tế.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">SQL Server</span
+                ><span class="tag">Database Design</span>
+              </div>
+              <span class="expand-hint">NHẤN ĐỂ XEM CHI TIẾT <b>＋</b></span>
+              <div class="skill-details" id="skill-detail-2" hidden>
+                <strong>SQL Server</strong>
+                <p>
+                  Hệ quản trị cơ sở dữ liệu quan hệ để lưu trữ và truy vấn dữ
+                  liệu bằng SQL/T-SQL, đồng thời dùng khóa và ràng buộc để giữ
+                  dữ liệu nhất quán.
+                </p>
+                <p>
+                  Index hỗ trợ tăng tốc truy vấn phù hợp; transaction gom nhiều
+                  thay đổi thành một đơn vị để bảo đảm tính toàn vẹn.
+                </p>
+              </div></button
+            ><button
+              type="button"
+              class="skill-card skill-toggle"
+              aria-expanded="false"
+              aria-controls="skill-detail-3"
+            >
+              <span class="skill-num">03 / APP DEV</span>
+              <div class="skill-icon">
+                <svg viewBox="0 0 40 40">
+                  <path d="M13 8 3 20l10 12M27 8l10 12-10 12M23 5l-6 30" />
+                </svg>
+              </div>
+              <h3>Ngôn ngữ lập trình</h3>
+              <p>
+                Linh hoạt lựa chọn ngôn ngữ phù hợp với bài toán và môi trường
+                phát triển.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">C#</span><span class="tag">C / C++</span
+                ><span class="tag">Python</span><span class="tag">Java</span>
+              </div>
+              <span class="expand-hint">NHẤN ĐỂ XEM CHI TIẾT <b>＋</b></span>
+              <div class="skill-details" id="skill-detail-3" hidden>
+                <strong>C#</strong>
+                <p>
+                  Ngôn ngữ hướng đối tượng, phù hợp xây dựng ứng dụng backend và
+                  phần mềm trong hệ sinh thái .NET.
+                </p>
+                <strong>C / C++</strong>
+                <p>
+                  Cho phép kiểm soát bộ nhớ và hiệu năng ở mức thấp, hữu ích với
+                  phần mềm hệ thống và ứng dụng cần tốc độ.
+                </p>
+                <strong>Python</strong>
+                <p>
+                  Cú pháp gọn, tiện cho script, tự động hóa, xử lý dữ liệu và
+                  xây dựng dịch vụ.
+                </p>
+                <strong>Java</strong>
+                <p>
+                  Ngôn ngữ đa nền tảng được dùng nhiều trong backend và hệ thống
+                  doanh nghiệp.
+                </p>
+              </div>
+            </button>
+          </div>
+          <div class="stack-band reveal">
+            <span class="tag">FLUTTER · KỸ NĂNG LIÊN QUAN</span
+            ><span class="tag">CURIOSITY · ALWAYS ON</span>
+          </div>
+        </div>
+      </section>
+      <dialog
+        class="technology-dialog"
+        id="technologyDialog"
+        aria-labelledby="technologyDialogTitle"
+      >
+        <div class="technology-dialog-inner">
+          <div class="technology-dialog-head">
+            <div>
+              <span class="mono" id="technologyDialogCategory"></span>
+              <h3 id="technologyDialogTitle">Công nghệ</h3>
+            </div>
+            <button class="dialog-close" type="button" aria-label="Đóng">
+              ×
+            </button>
+          </div>
+          <div class="technology-dialog-body"></div>
+          <div class="technology-dialog-foot mono">
+            ESC ĐỂ ĐÓNG · CHỌN CÔNG CỤ KHÁC ĐỂ KHÁM PHÁ
+          </div>
+        </div>
+      </dialog>
+      <section class="section" id="education">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <div>
+              <span class="mono section-no">03 — HỌC VẤN</span>
+              <h2>Hành trình<br />học hỏi.</h2>
+            </div>
+            <p>
+              Kiến thức làm nền cho hành trình xây dựng những sản phẩm có ích.
+            </p>
+          </div>
+          <div class="education reveal">
+            <div class="year">08 — 10 / 2025</div>
+            <div>
+              <h3>Dự án cá nhân · Blog Face Of Human</h3>
+              <p>Phát triển blog bằng C# và ASP.NET.</p>
+              <a
+                class="edu-link"
+                href="https://github.com/hoangviet24/BlogFactOfHuman.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                >XEM DỰ ÁN TRÊN GITHUB ↗</a
+              >
+            </div>
+            <div class="stamp"><span>01</span></div>
+          </div>
+          <div class="education reveal">
+            <div class="year">02 — 05 / 2025</div>
+            <div>
+              <h3>Thực tập · TMA</h3>
+              <p>Tham gia dự án Ecommerce với Java Spring Boot.</p>
+              <a
+                class="edu-link"
+                href="https://github.com/vtronghieu/tip_b18_computer-ecommerce-be.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                >XEM DỰ ÁN TRÊN GITHUB ↗</a
+              >
+            </div>
+            <div class="stamp"><span>02</span></div>
+          </div>
+          <div class="education reveal">
+            <div class="year">
+              2025 <span style="color: var(--muted)">/ TỐT NGHIỆP</span>
+            </div>
+            <div>
+              <h3>Đại học Yersin Đà Lạt</h3>
+              <p>Tốt nghiệp đại học · Đà Lạt, Việt Nam</p>
+            </div>
+            <div class="stamp"><span>Y</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="wrap contact-inner reveal">
+          <div class="eyebrow">04 — MỞ KẾT NỐI</div>
+          <h2>Cùng xây<br />điều có ích.</h2>
+          <p>
+            Mình luôn hứng thú với những ý tưởng phần mềm có thể tạo ra khác
+            biệt trong đời sống. Nếu bạn có một ý tưởng hay, hãy bắt đầu một
+            cuộc trò chuyện.
+          </p>
+          <button class="button" type="button" data-contact-open>
+            Gửi lời chào <span>↗</span>
+          </button>
+          <div class="mono" style="margin-top: 25px">
+            VÕ HOÀNG VIỆT · BACKEND DEVELOPER
+          </div>
+        </div>
+      </section>
+    </main>
+    <dialog
+      class="contact-dialog"
+      id="contactDialog"
+      aria-labelledby="dialogTitle"
+    >
+      <div class="dialog-inner">
+        <div class="dialog-top">
+          <div>
+            <div class="eyebrow">KÊNH LIÊN LẠC</div>
+            <h3 id="dialogTitle">Chọn cách<br />kết nối.</h3>
+          </div>
+          <button class="dialog-close" type="button" aria-label="Đóng">
+            ×
+          </button>
+        </div>
+        <div class="contact-options">
+          <a
+            class="contact-option"
+            href="https://www.facebook.com/hoangviet.vo.751/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span
+              ><strong>Facebook</strong
+              ><small>facebook.com/hoangviet.vo.751</small></span
+            ><em>↗</em></a
+          ><a
+            class="contact-option"
+            href="https://github.com/hoangviet24"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span
+              ><strong>GitHub</strong
+              ><small>github.com/hoangviet24</small></span
+            ><em>↗</em></a
+          ><a class="contact-option" href="mailto:hoangvietdoican2004@gmail.com"
+            ><span
+              ><strong>Email</strong
+              ><small>hoangvietdoican2004@gmail.com</small></span
+            ><em>↗</em></a
+          >
+        </div>
+      </div>
+    </dialog>
+    <footer>
+      <div
+        class="wrap"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        "
+      >
+        <span class="mono">© 2025 — VÕ HOÀNG VIỆT</span
+        ><span class="mono"
+          >THIẾT KẾ VỚI
+          <a href="#top"
+            >CURIOSITY <span style="color: var(--lime)">✳</span></a
+          ></span
+        >
+      </div>
+    </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
