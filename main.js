@@ -163,8 +163,9 @@ const technologyDialog = document.querySelector("#technologyDialog");
             renderer.setSize(width, height);
             camera.aspect = width / height;
             camera.updateProjectionMatrix();
-            group.position.x = width < 760 ? 0.35 : 0.55;
-            group.position.y = width < 760 ? 1 : 0.1;
+            group.scale.setScalar(width < 560 ? 0.72 : 1);
+            group.position.x = width < 560 ? 0.2 : 0.55;
+            group.position.y = width < 560 ? 1.25 : 0.1;
           }
           addEventListener("resize", resize);
           resize();

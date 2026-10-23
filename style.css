@@ -1109,3 +1109,254 @@ footer a {
         font-size: 9px;
     }
 }
+
+@media (max-width: 560px) {
+
+    main,
+    footer,
+    .nav {
+        width: calc(100% - 20px);
+    }
+
+    .wrap {
+        width: calc(100% - 32px);
+    }
+
+    .hero {
+        height: min(780px, 92svh);
+        min-height: 650px;
+        max-height: none;
+        padding-top: 62px;
+    }
+
+    .hero-content {
+        padding-top: 12px;
+    }
+
+    .hero:after {
+        background: linear-gradient(90deg, #080a0cf2 0%, #080a0cbb 52%, #080a0c44 100%), linear-gradient(0deg, #080a0c 0%, transparent 50%);
+    }
+
+    h1 {
+        font-size: clamp(60px, 17vw, 88px);
+        margin-top: 20px;
+    }
+
+    .roleline {
+        font-size: 16px;
+        margin-top: 23px;
+    }
+
+    .intro {
+        font-size: 13px;
+        max-width: 350px;
+    }
+
+    .hero-note {
+        right: 18px;
+        bottom: 88px;
+        top: auto;
+        font-size: 9px;
+    }
+
+    .hero-index {
+        right: 18px;
+        bottom: 20px;
+        gap: 9px;
+        font-size: 9px;
+    }
+
+    .scrollhint {
+        left: 10px;
+        bottom: 20px;
+        font-size: 8px;
+    }
+
+    .actions {
+        gap: 9px;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        min-height: 44px;
+        padding: 13px 14px;
+    }
+
+    .ticker {
+        height: 46px;
+    }
+
+    .section {
+        padding: 68px 0;
+    }
+
+    .section-head {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .section-head p {
+        text-align: left;
+        max-width: 400px;
+        margin-top: 18px;
+        font-size: 13px;
+    }
+
+    .about-grid {
+        gap: 28px;
+    }
+
+    .about-copy {
+        font-size: 15px;
+        line-height: 1.85;
+    }
+
+    .meta {
+        padding: 16px;
+        min-height: 94px;
+    }
+
+    .meta strong {
+        font-size: 14px;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        min-height: 0;
+        padding: 22px;
+    }
+
+    .skill-icon {
+        margin: 17px 0 13px;
+    }
+
+    .skill-card p {
+        max-width: none;
+    }
+
+    .education {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 22px 0;
+    }
+
+    .education .year {
+        font-size: 10px;
+    }
+
+    .education .stamp {
+        display: none;
+    }
+
+    .education h3 {
+        font-size: 17px;
+    }
+
+    .education p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .edu-link {
+        min-height: 38px;
+        align-items: center;
+    }
+
+    .contact {
+        padding: 65px 0;
+    }
+
+    .contact p {
+        font-size: 14px;
+    }
+
+    .contact-dialog,
+    .technology-dialog {
+        width: calc(100% - 28px);
+        max-height: 82svh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    .dialog-inner,
+    .technology-dialog-inner {
+        padding: 22px;
+    }
+
+    .technology-dialog-body,
+    .technology-dialog-body p {
+        font-size: 13px;
+    }
+
+    .technology-dialog-foot {
+        font-size: 9px;
+    }
+
+    .contact-option {
+        padding: 14px;
+    }
+
+    .contact-option small {
+        font-size: 10px;
+    }
+
+    .stack-band {
+        gap: 8px;
+    }
+
+    footer .wrap {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    footer .mono {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 380px) {
+    .wrap {
+        width: calc(100% - 28px);
+    }
+
+    .hero {
+        min-height: 620px;
+    }
+
+    .hero-note {
+        bottom: 80px;
+    }
+
+    .hero-index {
+        font-size: 8px;
+    }
+
+    h1 {
+        font-size: clamp(56px, 16.5vw, 68px);
+    }
+
+    .navcta {
+        font-size: 8px;
+        padding: 8px;
+    }
+
+    .brand {
+        font-size: 11px;
+    }
+
+    .meta {
+        padding: 13px;
+    }
+
+    .dialog-inner,
+    .technology-dialog-inner {
+        padding: 18px;
+    }
+
+    .technology-dialog-head h3 {
+        font-size: 34px;
+    }
+}
